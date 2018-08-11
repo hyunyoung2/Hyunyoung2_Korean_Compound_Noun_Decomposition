@@ -1,1 +1,1 @@
-# Korean Language's Compound Noun Decomposition
+# Korean Compound Noun Decomposition(한국어 복합 명사 분해)
