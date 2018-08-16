@@ -140,7 +140,7 @@ Prediction is done!!
 
 If you don't know how to run, go through **run.sh** script file. 
 
-This would show how to run Korean automatic spacing. 
+This would show how to run Korean compound noun decompostion. 
 
 **sample_x** : is sample file to test whether predict.py script works or not,  When you execute **run.sh** 
 
