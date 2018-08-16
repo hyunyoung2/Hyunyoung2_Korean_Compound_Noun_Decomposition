@@ -1,6 +1,5 @@
 # Korean Compound Noun Decomposition(한국어 복합 명사 분해)
 
-
 This Korean compound noun decomposition is made, in particular, on the following version.
 
 ```
@@ -16,6 +15,20 @@ If you encounter some error, check the version above once again.
 > ./downloader.sh
 
 ```shell
+# nlp-gpu @ nlpgpu in ~/Hyunyoung2/competition/compound_nouns/concat/EPOCH_20/250/github_for_competition/Hyunyoung2_Korean_Compound_Noun_Decomposition on git:master o [22:17:40] 
+$ ./downloader.sh 
+downloading........
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  217M  100  217M    0     0   110M      0  0:00:01  0:00:01 --:--:--  110M
+uncompressing......
+
+model/
+model/final-2600720.index
+model/final-2600720.meta
+model/checkpoint
+model/final-2600720.data-00000-of-00001
 ```
 
 **After downloading the model, You would find out **model** directory, then you can run predict.py.**
@@ -24,7 +37,7 @@ But you don't have **curl**, intall it on Ubuntu
 
 > sudo apt-get install curl
 
-# How To Run this Korean automatic spacing program.
+# How To Run this Korean compound decomposition program.
 
 > python3 predict.py [-h] [-o OUTPUT] [-n NUMBER] input
 
@@ -63,6 +76,7 @@ When you run the python scipt, predict.py, you have to specify the input file,
 If you not, you get the following error:
 
 ```shell
+# nlp-gpu @ nlpgpu in ~/Hyunyoung2/competition/compound_nouns/concat/EPOCH_20/250/github_for_competition/Hyunyoung2_Korean_Compound_Noun_Decomposition on git:master x [22:19:53] 
 $ python3 predict.py 
 /home/nlp-gpu/.local/lib/python3.5/site-packages/tensorflow/python/ops/gradients_impl.py:100: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
   "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
@@ -82,11 +96,44 @@ In order to get result of Korean automatic spacing, If you type in as follows:
 > python3 predict.py input_file -o output_file
 
 ````shell
+# nlp-gpu @ nlpgpu in ~/Hyunyoung2/competition/compound_nouns/concat/EPOCH_20/250/github_for_competition/Hyunyoung2_Korean_Compound_Noun_Decomposition on git:master x [22:25:33] 
+$ python3 predict.py input_file -o output_file1                              
+/home/nlp-gpu/.local/lib/python3.5/site-packages/tensorflow/python/ops/gradients_impl.py:100: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+
+
+============== Your input file is : =================
+input_file
+
+================ Your output file is: ====================
+/home/nlp-gpu/Hyunyoung2/competition/compound_nouns/concat/EPOCH_20/250/github_for_competition/Hyunyoung2_Korean_Compound_Noun_Decomposition/result/output_file1
+
+============= your batch size: 1 ====================
+.............
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 288971/288971 [50:10<00:00, 95.99it/s]
+Prediction is done!!
+
 ````
 
 But If you type in "-n" option, evaluation time would get shoter as follows: 
 
 ```
+# nlp-gpu @ nlpgpu in ~/Hyunyoung2/competition/compound_nouns/concat/EPOCH_20/250/github_for_competition/Hyunyoung2_Korean_Compound_Noun_Decomposition on git:master x [22:20:40] 
+$ python3 predict.py input_file -o output_file -n 300
+/home/nlp-gpu/.local/lib/python3.5/site-packages/tensorflow/python/ops/gradients_impl.py:100: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+
+
+============== Your input file is : =================
+input_file
+
+================ Your output file is: ====================
+/home/nlp-gpu/Hyunyoung2/competition/compound_nouns/concat/EPOCH_20/250/github_for_competition/Hyunyoung2_Korean_Compound_Noun_Decomposition/result/output_file
+
+============= your batch size: 300 ====================
+............
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 963/963 [00:25<00:00, 38.36it/s]
+Prediction is done!!
 ```
 
 If you don't know how to run, go through **run.sh** script file. 
@@ -97,7 +144,7 @@ This would show how to run Korean automatic spacing.
 
 # Result
 
-There are two ways you can get result of running this Korean automatic spacing. 
+There are two ways you can get result of running this Korean compuound noun decomposition. 
 
 But, in any case, all of the result will be created under **result** directory. 
 
