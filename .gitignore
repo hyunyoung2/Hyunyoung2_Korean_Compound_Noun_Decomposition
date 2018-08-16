@@ -1,0 +1,6 @@
+# ignore the files belowi
+
+__pycache__/
+model/
+result/
+
