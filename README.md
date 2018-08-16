@@ -91,7 +91,9 @@ This file contains vocabulary dictionary and model file after traninig.
 
 ### an example of running predict.py
 
-In order to get result of Korean automatic spacing, If you type in as follows:
+In order to get result of Korean compound noun decomposition, If you type in as follows:
+
+In the case below, **-n** is be default 1. 
 
 > python3 predict.py input_file -o output_file
 
