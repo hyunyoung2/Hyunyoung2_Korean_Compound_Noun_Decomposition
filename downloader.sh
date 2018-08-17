@@ -5,9 +5,9 @@
 echo "downloading........"
 echo
 
-MODEL="model.tar.gz"
+MODEL="model_close.tar.gz"
 
-curl -O "http://nlp.kookmin.ac.kr/hyunyoung2/compound_noun/${MODEL}"
+curl -O "http://nlp.kookmin.ac.kr/hyunyoung2/compound_noun/close/${MODEL}"
 
 echo "uncompressing......"
 echo 
