@@ -1,6 +1,6 @@
 # Korean Compound Noun Decomposition(한국어 복합 명사 분해)-Close
 
-- this is the same from [Hyunyoung2_Korean_Compound_Noun_Decopsition_Open](https://github.com/hyunyoung2/Hyunyoung2_Korean_Compound_Noun_Decomposition/edit/master/README.md). the reasone this codes is separate is because I have to submit this code to two parts.
+- this is the same from [Hyunyoung2_Korean_Compound_Noun_Decopsition_Open](https://github.com/hyunyoung2/Hyunyoung2_Korean_Compound_Noun_Decomposition_Open). the reasone this codes is separate is because I have to submit this code to two parts.
  
  
 This Korean compound noun decomposition is made, in particular, on the following version.
